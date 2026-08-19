@@ -1,0 +1,12 @@
+{
+  "name": "ats-system",
+  "type": "django",
+  "env": {
+    "DJANGO_SECRET_KEY": "your-secret-key-here-change-it-later",
+    "DEBUG": "True",
+    "ALLOWED_HOSTS": "*"
+  },
+  "hooks": {
+    "postdeploy": "python manage.py migrate"
+  }
+}
